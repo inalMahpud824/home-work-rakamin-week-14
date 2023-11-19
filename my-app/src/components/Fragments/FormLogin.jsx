@@ -16,10 +16,10 @@ const FormLogin = () => {
       });
 
       // Proses respons dari backend di sini
-      console.log(response);
-      console.log(response.data);
+      localStorage.setItem('token', response.data.token)
+
       // Menampilkan pesan sukses
-      setRegistrationMessage("Login successful!");
+      window.location.href='/'
     } catch (error) {
       console.error("Error during registration:", error);
       // Menampilkan pesan error

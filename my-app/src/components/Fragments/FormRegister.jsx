@@ -8,9 +8,6 @@ const FormRegister = () => {
 
   const handleRegister = async (event) => {
     event.preventDefault();
-    console.log(event.target.name.value)
-    console.log(event.target.email.value)
-    console.log(event.target.password.value)
 
      // Menghentikan perilaku bawaan formulir untuk mencegah refresh halaman
     try {
